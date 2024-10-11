@@ -43,6 +43,7 @@ body {
   font-weight: 500;
   margin-bottom: 0.6em;
 }
+
 .container input {
   display: block;
   width: 100%;
@@ -52,4 +53,67 @@ body {
   color: #414a67;
   outline: none;
   font-weight: 400;
+  margin-bottom: 0.6em;
+}
+
+.container input:focus {
+  border-color: #587ef4;
+}
+
+.total-amount-container,
+.user-amount-container {
+  background-color: #ffffff;
+  padding: 1.25em 0.9em;
+  border-radius: 0.3em;
+  box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+}
+.output-container {
+  background-color: #587ef4;
+  color: #ffffff;
+  border-radius: 0.3em;
+  box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+  font-weight: 500;
+  margin: 2em 0;
+  padding: 1.2em;
+}
+
+.output-container p {
+  font-weight: 500;
+  margin-bottom: 0.6em;
+}
+
+.output-container span {
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  color: #e5e5e5;
+}
+
+.submit {
+  background-color: #587ef4;
+  color: #ffffff;
+  font-size: 1em;
+  margin-top: 0.8em;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  border: none;
+  padding: 0.6em 1.2em;
+  border-radius: 0.3em;
+  font-weight: 500;
+}
+
+.list {
+  background-color: #ffffff;
+  padding: 1.8em 1.2em;
+  box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+  border-radius: 0.6em;
+}
+
+.hide {
+  display: none;
+}
+
+.error {
+  color: #ff465a;
 }

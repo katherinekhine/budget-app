@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget App</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="sub-container">
+          <!-- Budget -->
+          <div class="total-amount-container">
+            <h3>Budget</h3>
+            <p class="hide error" id="budget-error">
+              Value cannot be empty or negative
+            </p>
+            <input
+              type="number"
+              id="total-amount"
+              placeholder="Enter Total Amount"
+            />
+            <button class="submit" id="total-amount-button">Set Budget</button>
+          </div>
+
+          <!-- Expenditure -->
+          <div class="user-amount-container">
+            <h3>Expenses</h3>
+            <p class="hide error" id="product-title-error">
+              Values cannot be empty
+            </p>
+            <input
+              type="text"
+              class="product-title"
+              id="product-title"
+              placeholder="Enter Title of Product"
+            />
+            <!-- <p class="hide" id="product-cost-error"></p> -->
+            <input
+              type="number"
+              id="user-amount"
+              placeholder="Enter cost of product"
+            />
+            <button type="submit" id="check-amount">Check Amount</button>
+          </div>
+        </div>
+        <!-- Output -->
+      </div>
+      <!-- list -->
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>
